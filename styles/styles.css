@@ -13,6 +13,7 @@ body{
     align-items: center;
     justify-content: space-evenly;
     box-shadow: 5px 5px 5px rgba(172, 172, 172, 0.5);
+    margin-bottom: 2%;
 }
 .left-section{
     width:35%;
@@ -83,7 +84,7 @@ button:hover{
 }
 /* Sidebar */
 .sidebar{
-    top: 153px;
+    top: 160px;
     position: absolute;
     left: 0;
     width: 20%;
