@@ -1,0 +1,99 @@
+/* fjalla one */
+/* roboto */
+/* Poppins */
+body{
+    margin:0;
+}
+#header{
+    display:flex;
+    width:100%;
+    left:0;
+    right:0;
+    top: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 5px rgba(172, 172, 172, 0.5);
+}
+.left-section{
+    width:35%;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#logo-image{
+    width:30%;
+    border-radius: 100%;
+}
+#logo-texts{
+    display:flex;
+    flex-direction:column;
+    width: 60%;
+    margin-left:5%;
+}
+#logo-text{
+    font-family:fjalla one , sans-serif;
+    font-size:2rem;
+    margin-bottom:0;
+}
+.logo-span{
+    color:#274C77;
+}
+#slogan{
+    font-family: poppins;
+    font-size: 1rem;
+    font-weight: 600;
+    color:red;
+    margin-top:0;
+}
+.middle-section{
+    display: flex;
+    width:70%;
+    font-family: poppins;
+    font-size: 1.5rem;
+}
+#navigation-bar{
+    width:80%;
+}
+#navigation-bar a {
+    padding: 2%;
+    text-decoration:none;
+    color:black;
+    transition: all 0.2s;
+}
+#navigation-bar a:hover{
+    color:#A3CEF1;
+    font-weight: 600;
+}
+button{
+    width:50px;
+    height:50px;
+    background-color:#6096BA;
+    border: none;
+    border-radius: 4px;
+    transition:all 0.4s ease-in-out;
+}
+button:hover{
+    background-color: #274C77;
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0,0, 5, 10);
+}
+#button-image{
+    width:100%;
+}
+/* Sidebar */
+.sidebar{
+    top: 153px;
+    position: absolute;
+    left: 0;
+    width: 20%;;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.side-bar-nav {  
+    margin-bottom: 5%;
+}
+main{
+    margin-left: 20%;
+}
