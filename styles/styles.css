@@ -103,7 +103,7 @@ h1{
     padding:10%;
     text-align: center;
     font-family:roboto;
-    background: #274C77;
+    background: #0077B6;
     box-shadow: 5px 5px 5px rgba(172, 172, 172, 0.3);
     color:whitesmoke;
 }
@@ -134,4 +134,43 @@ h1{
 .banner-image{
     width:100%;
 
+}
+.section-header{
+    text-align: center;
+    font-family:fjalla one;
+    font-weight:600;
+    font-size:3rem;
+}
+#product-main-container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-evenly ;
+}
+.product-container{
+    display:grid;
+    grid-template-rows: auto 150px;
+    position:relative;
+    margin-bottom: 2%;
+    
+}
+.product-name-container{
+    font-family: poppins;
+    font-size:1rem;
+    margin:0;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+}
+.product-name{
+    margin:0;
+}
+.add-to-cart-button-container{
+    position: absolute;
+    width:100%;
+    bottom: 0;
+}
+.add-to-cart-button{
+    width:100%;
+    padding:3% 0 3% 0;
 }
