@@ -128,6 +128,9 @@ h1{
     color: #6096BA;
     font-weight:600;
 }
+.side-banner-image{
+    margin-top:2%;
+}
 .hero-section{
     margin-left: 21%;
 }
@@ -137,7 +140,7 @@ h1{
 }
 .section-header{
     text-align: center;
-    font-family:fjalla one;
+    font-family:sans-serif,fjalla one;
     font-weight:600;
     font-size:3rem;
 }
@@ -151,8 +154,8 @@ h1{
     display:grid;
     grid-template-rows: auto 150px;
     position:relative;
-    margin-bottom: 2%;
-    
+    width:350px;
+    margin-top:2%;
 }
 .product-name-container{
     font-family: poppins;
@@ -173,4 +176,22 @@ h1{
 .add-to-cart-button{
     width:100%;
     padding:3% 0 3% 0;
+    background-color:#90E0EF;
+    border:none;
+    border-radius: 12px;;
+    font-weight:600;
+    font-family:sans-serif;
+    transition: all 0.5s ;
+}
+.add-to-cart-button:hover{
+    background-color:#023E8A;
+    color:white;
+
+}
+.product-image-container{
+    width:80%;
+    margin:auto;
+}
+.product-image{
+    width:100%;
 }
