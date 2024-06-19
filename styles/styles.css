@@ -210,3 +210,11 @@ h1{
 .product-image{
     width:100%;
 }
+.banner-image-div{
+    width:85%;
+    margin: auto;
+    ;
+}
+.banner-image{
+    border-radius: 14px;
+}
