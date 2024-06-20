@@ -1,6 +1,11 @@
 /* fjalla one */
 /* roboto */
 /* Poppins */
+
+
+:root{
+    --BGCOLOR: white;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -9,7 +14,7 @@ body{
     margin:0;
 }
 #header{    
-    background-color: white;
+    background-color: var(--BGCOLOR);
     z-index: 100;
     display:flex;
     width:100%;
