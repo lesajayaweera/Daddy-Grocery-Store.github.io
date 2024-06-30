@@ -5,6 +5,8 @@
 
 :root{
     --BGCOLOR: white;
+    --FOOTERCOLOR:#023E8A;
+    --footerfont: white;
 }
 html{
     scroll-behavior: smooth;
@@ -70,11 +72,14 @@ body{
     padding: 2%;
     text-decoration:none;
     color:black;
+    
     transition: all 0.2s;
 }
 #navigation-bar a:hover{
     color:#00B4D8;
     font-weight: 600;
+    background-color: #CAF0F8;
+    border-radius: 50px;
 }
 .nav-button{
     width:50px;
@@ -166,13 +171,32 @@ h1{
     align-items: center;
     justify-content: space-evenly ;
     width: 100%;
+
+
+    
 }
+
+@keyframes fade-in{
+    from {scale: .8;opacity: 0;}
+    to{scale: 1;opacity: 1;}
+}
+
 .product-container{
     display:grid;
     grid-template-rows: auto 150px;
     position:relative;
     width:350px;
     margin-top:2%;
+    transition:all 0.5s;
+
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start:cover ;
+    animation-range-end: 500px;
+    
+}
+.product-container:hover{
+    box-shadow: 5px 5px 5px rgba(172, 172, 172, 0.3);
 }
 .product-name-container{
     font-family: poppins;
@@ -223,3 +247,4 @@ h1{
 .banner-image{
     border-radius: 14px;
 }
+/*          footer             */
