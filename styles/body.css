@@ -211,15 +211,20 @@ h1{
 .customer-review-container{
     display:flex;
     flex-direction: column;
-    background-color: #90E0EF;
+    border: 2px solid lightgray;
     padding:10px;
     border-radius: 10px;
     width:400px;
 
+    transition: all 0.5s;
     animation: fade-in linear;
     animation-timeline: view();
     animation-range-start:cover ;
     animation-range-end: 500px;
+}
+.customer-review-container:hover{
+     box-shadow:3px 2px lightgrey;
+     scale:1.1;
 }
 .customer-review-main-container{
     /* display: grid;
