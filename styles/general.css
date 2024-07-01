@@ -1,0 +1,14 @@
+:root{
+    --BGCOLOR: white;
+    --FOOTERCOLOR:#023E8A;
+    --footerfont: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    padding-bottom: 10rem;
+    
+}

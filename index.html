@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daddy's -Home</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="Images/logo.png">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="/styles/body.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/general.css">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4c8d9ef68f.js" crossorigin="anonymous"></script>
 </head>
 <body>
    <header id="header">
@@ -29,10 +37,16 @@
                 <a href="Html websites/Loyalty benifits.html">Loyalty Benifts</a>
             </nav>
             <div class="Button-container">
-                <button class="nav-button"><img id="button-image" src="Images/icons/search_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Search icon" onclick="alert('search');"></button>
-                <button class="nav-button"><img id="button-image" src="Images/icons/shopping_cart_checkout_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Cart"></button>
-                <button class="nav-button"><img id="button-image" src="Images/icons/order_play_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Order"></button>
-            </div>
+                 <button class="nav-button">
+                    <a href="" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                 </button>
+                <button class="nav-button">
+                    <a href="" class="wishlist"><i class="fa-solid fa-heart"></i></a>
+                </button> 
+                <button class="nav-button">
+                    <a href="" class="cart" ><i class="fa-solid fa-cart-shopping"></i></a>
+                </button>
+               </div>
         </section>
    </header>
    <main>
@@ -45,12 +59,12 @@
             <div id="sidebar-container">
                 <div id="side-bar-header"><h1>All Cateogory</h1></div>
                 <div class="side-bar-nav">
-                    <div><a href="Html websites/products.html" class="side-bar-a">Products</a></div><hr>
-                    <div><a href="Html websites/Bakery.html" class="side-bar-a">Bakery</a></div><hr>
-                    <div><a href="Html websites/Beverages.html" class="side-bar-a">Beverages</a></div><hr>
-                    <div><a href="Html websites/Fish and meat.html" class="side-bar-a">Fish & Meat</a></div><hr>
-                    <div><a href="Html websites/Fruits.html" class="side-bar-a">Fruits</a></div><hr>
-                    <div><a href="Html websites/vegetables.html" class="side-bar-a">Vegetables</a></div><hr>
+                    <div ><a href="Html websites/products.html" class="side-bar-a"><i id="sidebar-products" class="fa-brands fa-product-hunt"></i> Products</a></div><hr>
+                    <div ><a href="Html websites/Bakery.html" class="side-bar-a"><i id="sidebar-bakery" class="fa-solid fa-bread-slice"></i>  Bakery</a></div><hr>
+                    <div ><a href="Html websites/Beverages.html" class="side-bar-a"><i id="sidebar-beverages" class="fa-solid fa-martini-glass-citrus"></i> Beverages</a></div><hr>
+                    <div ><a href="Html websites/Fish and meat.html" class="side-bar-a"><i id="sidebar-fish" class="fa-solid fa-fish-fins"></i> Fish & Meat</a></div><hr>
+                    <div ><a href="Html websites/Fruits.html" class="side-bar-a"><i id="sidebar-fruits" class="fa-regular fa-lemon"></i> Fruits</a></div><hr>
+                    <div ><a href="Html websites/vegetables.html" class="side-bar-a"><i id="sidebar-vegetables" class="fa-solid fa-carrot"></i> Vegetables</a></div><hr>
                 </div>
             </div>
            
@@ -58,13 +72,9 @@
             <img class="side-banner-image" src="Images/Green and Yellow 3D Modern Food Delivery Instagram Story.png" alt="side-banner-image">
         </section>
         <section class="hero-section">
-            
-            <section class="about-us -section">
-    
-            </section>
             <section class=" product-section">
                 <div class="section-header">
-                    <p class="section-header-text" id="products" >Our Products</p><hr>
+                    <p class="section-header-text" id="products" >Our Popular Products</p><hr>
                 </div>
                 
                 <div id="product-main-container">
@@ -212,8 +222,138 @@
                         </div>
         
                     </div>
+                    <div class="product-container">
+                        <div class="product-image-container">
+                            <img class="product-image" src="Images/product images/ratti kiri.jpg" id="product-image" alt="image1">
+                        </div>
+                        <div class="product-name-container">
+                            <p class="product-name">Italian style chicken</p>
+                            <p>1 unit</p>
+                            <p>Rs.5000.00</p>
+                        </div>
+                        <div class="add-to-cart-button-container">
+                            <button class="add-to-cart-button">
+                                ADD TO CART
+                            </button>
+                        </div>
+        
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image-container">
+                            <img class="product-image" src="Images/product images/ratti kiri.jpg" id="product-image" alt="image1">
+                        </div>
+                        <div class="product-name-container">
+                            <p class="product-name">Italian style chicken</p>
+                            <p>1 unit</p>
+                            <p>Rs.5000.00</p>
+                        </div>
+                        <div class="add-to-cart-button-container">
+                            <button class="add-to-cart-button">
+                                ADD TO CART
+                            </button>
+                        </div>
+        
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image-container">
+                            <img class="product-image" src="Images/product images/ratti kiri.jpg" id="product-image" alt="image1">
+                        </div>
+                        <div class="product-name-container">
+                            <p class="product-name">Italian style chicken</p>
+                            <p>1 unit</p>
+                            <p>Rs.5000.00</p>
+                        </div>
+                        <div class="add-to-cart-button-container">
+                            <button class="add-to-cart-button">
+                                ADD TO CART
+                            </button>
+                        </div>
+        
+                    </div>
                 </div>
             </section>
+
+           
+            
+        </section>
+
+        
+    </div><br><br>
+
+
+
+
+    <div class="second-hero-container">
+        <div class="section-header">
+                <p class="section-header-text" id="products" >What our customers say!</p>
+            </div> 
+        <section class="customer-review-main-container">
+            <div class="customer-review-container">
+                <div class="customer-details-container">
+                    <div class="image-container">
+                        <img src="Images/profile pic 2.jpg" alt="" srcset="">
+                    </div>
+                    <div class="name-container">
+                        <p>Joe Rogan</p>
+                        <p>Regular customer</p>
+                    </div>
+                </div>
+                <div class="comment-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eveniet sapiente assumenda dicta doloremque excepturi, quod adipisci expedita perspiciatis et labore. Aut, labore quod. Quis velit rerum temporibus doloremque voluptatem?</p>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="customer-review-container">
+                <div class="customer-details-container">
+                    <div class="image-container">
+                        <img src="Images/profile pic 3.jpg" alt="" srcset="">
+                    </div>
+                    <div class="name-container">
+                        <p>Alex volkov</p>
+                        <p>Buisnessman</p>
+                    </div>
+                </div>
+                <div class="comment-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eveniet sapiente assumenda dicta doloremque excepturi, quod adipisci expedita perspiciatis et labore. Aut, labore quod. Quis velit rerum temporibus doloremque voluptatem?</p>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="customer-review-container">
+                <div class="customer-details-container">
+                    <div class="image-container">
+                        <img src="Images/profile pic.jpg" alt="" srcset="">
+                    </div>
+                    <div class="name-container">
+                        <p>Britny Brown</p>
+                        <p>Regular customer(teacher)</p>
+                    </div>
+                </div>
+                <div class="comment-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eveniet sapiente assumenda dicta doloremque excepturi, quod adipisci expedita perspiciatis et labore. Aut, labore quod. Quis velit rerum temporibus doloremque voluptatem?</p>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            
+        </section>
+        
+    </div>
+    <div class="third-hero-element">
+        <section class="trusted-brand-container">
             
         </section>
     </div>

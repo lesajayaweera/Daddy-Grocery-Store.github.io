@@ -1,0 +1,110 @@
+/* fjalla one */
+/* roboto */
+/* Poppins */
+
+
+
+#header{    
+    background-color: var(--BGCOLOR);
+    z-index: 100;
+    display:flex;
+    width:100%;
+    left:0;
+    right:0;
+    top: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 5px rgba(172, 172, 172, 0.5);
+    margin-bottom: 1%;
+}
+.left-section{
+    width:35%;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#logo-image{
+    width:30%;
+    border-radius: 100%;
+}
+#logo-texts{
+    display:flex;
+    flex-direction:column;
+    width: 60%;
+    margin-left:5%;
+}
+#logo-text{
+    font-family:fjalla one , sans-serif;
+    font-size:2rem;
+    margin-bottom:0;
+}
+.logo-span{
+    color:#274C77;
+}
+#slogan{
+    font-family: poppins;
+    font-size: 1rem;
+    font-weight: 600;
+    color:red;
+    margin-top:0;
+}
+.middle-section{
+    display: flex;
+    width:70%;
+    font-family: poppins;
+    font-size: 1.5rem;
+}
+#navigation-bar{
+    width:80%;
+}
+#navigation-bar a {
+    padding: 2%;
+    text-decoration:none;
+    color:black;
+    border-radius: 50px;
+    transition: all 0.7s;
+}
+#navigation-bar a:hover{
+    color:#00B4D8;
+    font-weight: 600;
+    background-color: #CAF0F8;
+    
+}
+.nav-button{
+    width:50px;
+    height:50px;
+    background-color:#CAF0F8;
+    border: none;
+    border-radius: 410%;
+    transition:all 0.4s ease-in-out;
+}
+.nav-button:hover{
+    background-color: #90E0EF;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0,0, 5, 5);
+}
+.nav-button i{
+    color: black;
+    transition: all 0.5s;
+}
+.nav-button:hover  i{
+    color: #023E8A;
+    scale: 2;
+}
+
+.nav-button:hover .wishlist i{
+    color: red;
+    scale: 2;
+}
+
+
+#sidebar-hero-container{
+    display:flex;
+    flex:1 2;
+    flex-direction: row;
+    /* align-items: center;
+    justify-content: center; */
+
+}
+
+/*          footer             */
