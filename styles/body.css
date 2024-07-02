@@ -277,7 +277,7 @@ h1 {
     border-radius: 20px;
     
 
-    animation:scrolling  20s infinite
+    animation:scrolling  15s infinite
   }
 }
 .brands-img{
@@ -299,8 +299,4 @@ h1 {
   0%{transform: translate(0)}
   25%{transform: translate(-100%)}
   50%{transform: translate(-150%)}
-  
-  
-
-  
 }
