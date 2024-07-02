@@ -277,7 +277,7 @@ h1 {
     border-radius: 20px;
     
 
-    animation:scrolling  15s infinite
+    animation:scrolling  15s infinite;
   }
 }
 .brands-img{
