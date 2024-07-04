@@ -85,7 +85,7 @@
 }
 .nav-button i{
     color: black;
-    transition: all 0.5s;
+    scale:1.2;    transition: all 0.5s;
 }
 .nav-button:hover  i{
     color: #023E8A;

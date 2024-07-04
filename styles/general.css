@@ -1,7 +1,9 @@
 :root{
     --BGCOLOR: white;
-    --FOOTERCOLOR:#023E8A;
+    --FOOTERCOLOR:#ADE8F4;
     --footerfont: white;
+    --headerSpan :#0077B6;
+    --footerIconColor:#0077B6;
 }
 html{
     scroll-behavior: smooth;
@@ -9,6 +11,6 @@ html{
 
 body{
     margin:0;
-    padding-bottom: 100rem;
+    
     
 }

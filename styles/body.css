@@ -1,3 +1,10 @@
+/* fjalla one */
+/* roboto */
+/* Poppins */
+
+#brand-span{
+  color:var(--headerSpan)
+}
 /* Sidebar */
 .sidebar {
   width: 20%;
@@ -113,7 +120,8 @@ h1 {
   animation-range-end: 500px;
 }
 .product-container:hover {
-  box-shadow: 5px 5px 5px rgba(172, 172, 172, 0.3);
+  box-shadow: 1px 1px 5px rgba(172, 172, 172, 0.3);
+  
 }
 .product-name-container {
   font-family: poppins;
@@ -144,6 +152,7 @@ h1 {
 .add-to-cart-button:hover {
   background-color: #023e8a;
   color: white;
+  cursor:pointer
 }
 .add-to-cart-button:active {
   background-color: #0077b6;
@@ -162,10 +171,12 @@ h1 {
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  border-radius: 14px;
 
   img {
     /* margin: 10px; */
-    animation: slide-show 15s infinite;
+    animation: slide-show 15s infinite; 
+    
   }
 }
 
@@ -238,20 +249,20 @@ h1 {
 .customer-review-container {
   display: flex;
   flex-direction: column;
-  border: 2px solid lightgray;
+  /* border: 2px solid lightgray; */
   padding: 10px;
   border-radius: 10px;
   width: 400px;
 
-  transition: all 0.5s;
+  transition: scale 0.5s,box-shadow 0.5s;
   animation: fade-in linear;
   animation-timeline: view();
   animation-range-start: cover;
   animation-range-end: 500px;
 }
 .customer-review-container:hover {
-  box-shadow: 3px 2px lightgrey;
-  scale: 1.1;
+  box-shadow: 1px 1px 10px lightgrey;
+  scale: 1.2;
 }
 .customer-review-main-container {
   /* display: grid;
@@ -277,7 +288,8 @@ h1 {
     border-radius: 20px;
     
 
-    animation:scrolling  15s infinite;
+    animation:scrolling  20s infinite;
+   
   }
 }
 .brands-img{
