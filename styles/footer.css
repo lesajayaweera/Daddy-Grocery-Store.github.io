@@ -1,3 +1,6 @@
+/* fjalla one */
+/* roboto */
+/* Poppins */
 
 footer{
     background-color:var(--FOOTERCOLOR);
@@ -22,10 +25,14 @@ footer{
 .footer-main-container{
     padding-top: 5%;
     font-size: 1.5rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .logo-footer{
-    width:70%;
-    border-radius: 70%;
+    width:25%;
+    border-radius: 100%;
 }
 .brand-footer{
     display:flex;
@@ -33,17 +40,31 @@ footer{
     flex-direction: column;
     justify-content: space-between;
 }
+.footer-brand-slogan{
+    color: red;
+    text-transform: capitalize;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 0;
+}
 .brand-name-footer{
-    width:200px;
-    color:#17B890;
-    font-family:"taviraj",sans-serif; 
+    width:300px;
+    color:black;
+    font-size: 2rem;
+    font-family:fjalla one; 
+    text-align:left ;
     margin:0 0 0 10px;
     font-weight:1000;
     margin-left:0;
 }
 .logo-footer-container{
     display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     flex-direction: row;
+    padding-bottom:2rem;
 }
 .footer-description{
     width:100%;
@@ -74,18 +95,22 @@ footer{
     color:#17B890
 }
 .useful-links-header{
-    font-family:taviraj;
+    font-family:fjalla one;
+    text-transform: capitalize;
     font-weight: 1000;
-    color:#17B890;
+    color:black;
     margin-top:0;
 }
 .useful-links-header2{
-    color:black;
+    color:#0077B6;
 }
 .footer-list{
     text-decoration: none;
     color:black;
     font-size:medium;
+}
+.social-media-main-container{
+    margin-bottom: 2.5rem;
 }
 .social-media-container{
     display:grid;
@@ -111,23 +136,25 @@ footer{
 
 .subscribe-button{
     width:auto;
-    background-color: #17B890;
-    color:black;
+    background-color: #0077B6;
+    color:white;
     border-style:none;
     padding:  5px 10px 5px 10px;
-    font-family:taviraj;
+    font-family:poppins;
     font-weight:700;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    transition: all 0.5s;
+    transition: all 0.8s;
 }
 .subscribe-button:hover{
-    background-color:#17B890;
+    background-color:#023E8A;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
     border-width: 1px;
     border-color:#9DC5BB;
     border-style:solid;
+    color: lightblue;
 }
+
 .subscribe-button:active{
     background-color:#9DC5BB;
 }
@@ -142,7 +169,7 @@ footer{
     margin-bottom:0;
 }
 @media   (min-width:200px) and (max-width:1000px){
-    .logo-footer-container .logo-div{
+     .logo-div{
         margin-left:0;
     }
     .useful-links-header{
