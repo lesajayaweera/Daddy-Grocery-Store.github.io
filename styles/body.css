@@ -312,3 +312,56 @@ h1 {
   25%{transform: translate(-100%)}
   50%{transform: translate(-150%)}
 }
+
+/*  Products page  */
+.product-banner{
+  position: sticky;
+  img{
+    width: 100%;
+  }
+}
+#banner-scroll-container{
+  margin-top:2% ;
+  display: flex;
+  overflow: hidden;
+  border-radius: 20px;
+  
+  
+  
+  
+  
+  
+  
+  img{
+    width: 1525px;
+    height: 400px;
+    object-fit: cover;
+    
+    animation: slide-show1 30s infinite;
+    
+  }
+  
+}
+@keyframes slide-show1 {
+  0% {
+    transform: translate(0);
+  }
+  15% {
+    transform: translate(0);
+  }
+  30% {
+    transform: translate(-100%);
+  }
+  45% {
+    transform: translate(-200%);
+  }
+  70% {
+    transform: translate(-300%);
+  }
+  85%{
+    transform:translate(-400%);
+  }
+  90%{
+    transform: translate(-400%);
+  }
+}
