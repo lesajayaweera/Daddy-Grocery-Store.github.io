@@ -7,30 +7,43 @@
 #header{    
     background-color: var(--BGCOLOR);
     z-index: 100;
-    display:flex;
     width:100%;
     left:0;
     right:0;
     top: 0;
-    align-items: center;
-    justify-content: space-evenly;
+    /* align-items: center;
+    justify-content: space-between; */
     box-shadow: 5px 5px 5px rgba(172, 172, 172, 0.5);
     margin-bottom: 1%;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 300px;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 .left-section{
-    width:35%;
-    display:flex;
+    width:100%;
+    min-width: 350px;
+    /* display:flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    ;
+    
+    align-items: center;
+    justify-content: center;
 }
 #logo-image{
-    width:30%;
+    width:100%;
     border-radius: 100%;
+    margin-left: 1rem;
 }
 #logo-texts{
     display:flex;
     flex-direction:column;
-    width: 60%;
+    width: 100%;
     margin-left:5%;
 }
 #logo-text{
@@ -49,18 +62,26 @@
     margin-top:0;
 }
 .middle-section{
-    display: flex;
-    width:70%;
     font-family: poppins;
-    font-size: 1.5rem;
+    font-size: 1.5rem; 
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    
 }
 #navigation-bar{
-    width:80%;
+    width:90%;
+    
+    
 }
 #navigation-bar a {
     padding: 2%;
     text-decoration:none;
     color:black;
+    float: left;
     border-radius: 50px;
     transition: all 0.7s;
 }
@@ -75,7 +96,7 @@
     height:50px;
     background-color:#CAF0F8;
     border: none;
-    border-radius: 410%;
+    border-radius: 100%;
     transition:all 0.4s ease-in-out;
 }
 .nav-button:hover{
@@ -98,13 +119,20 @@
 }
 
 
-#sidebar-hero-container{
+.right-section{
+    width: 100%;
+    min-width: 150px;
+    
+}
+.Button-container{
     display:flex;
-    flex:1 2;
-    flex-direction: row;
-    /* align-items: center;
-    justify-content: center; */
-
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
 }
 
-/*          footer             */
+
+
+/* media queries */
+
+
