@@ -116,7 +116,7 @@ h1 {
 
 .product-container {
   display: grid;
-  grid-template-rows: auto 150px;
+  grid-template-rows: auto 200px;
   position: relative;
   width: 350px;
   margin-top: 2%;
@@ -133,14 +133,17 @@ h1 {
 }
 .product-name-container {
   font-family: poppins;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 0;
+  
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 .product-name {
   margin: 0;
+  color:#023e8a;
+  font-weight: 700;
 }
 .add-to-cart-button-container {
   position: absolute;
