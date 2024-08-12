@@ -116,9 +116,9 @@ h1 {
 
 .product-container {
   display: grid;
-  grid-template-rows: auto 200px;
+  grid-template-rows: auto 230px;
   position: relative;
-  width: 350px;
+  width: 400px;
   margin-top: 2%;
   transition: all 0.5s;
 
