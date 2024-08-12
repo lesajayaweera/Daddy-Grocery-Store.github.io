@@ -504,6 +504,14 @@ export const products = [
       category: "Vegetables",
       Image: "../Images/product images/vegetables/Corn.jpg",
       unit: "Per 1 Kg",
+    },
+    {
+      name:"Lectuce",
+      price: 10000,
+      id: "LE-VE-01",
+      category: "Vegetables",
+      Image: "../Images/product images/vegetables/Lectuce.jpg",
+      unit: "Per 1 Kg",
     }
   ],
 ];
