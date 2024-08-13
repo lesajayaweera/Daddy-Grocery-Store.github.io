@@ -21,23 +21,30 @@
     <script src="https://kit.fontawesome.com/4c8d9ef68f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   <header id="header">
+    <header id="header">
         <section class="left-section">
             <img src="Images/logo.png" alt="Brand logo" id="logo-image">
             <div id="logo-texts">
                 <p id="logo-text">Daddy's<span class="logo-span"> Grocery Store</span></p>
-                <p id="slogan" >Easy Grocery Solution</p>
+                <p id="slogan">Easy Grocery Solution</p>
             </div>
         </section>
         <section class="middle-section">
             <nav id="navigation-bar">
                 <a href="index.html">Home</a>
                 <a href="Html websites/about.html">About Us</a>
-                <a href="Html websites/products.html">Products</a>
-                <a href="Html websites/Loyalty benifits.html">Loyalty Benifts</a>
+                <div class="dropdown">
+                    <a href="Html websites/products.html" id="DropdownProducts">Products</a>
+                    <div class="dropdown-content">
+                        <a href="Html websites/vegetables.html">Vegetables</a>
+                        <a href="Html websites/Fruits.html">Fruits</a>
+                        <a href="Html websites/product3.html">Fish & Meat</a>
+                        <a href="Html websites/product3.html">Beverages</a>
+                        <a href="Html websites/product3.html">Bakery Products</a>
+                    </div>
+                </div>
+                <a href="Html websites/Loyalty benifits.html">Loyalty Benefits</a>
             </nav>
-
-            
         </section>
         <section class="right-section">
             <div class="Button-container">
@@ -46,13 +53,13 @@
                 </button>
                 <button class="nav-button">
                     <a href="" class="wishlist"><i class="fa-solid fa-heart"></i></a>
-                </button> 
+                </button>
                 <button class="nav-button">
-                    <a href="" class="cart" ><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
                 </button>
             </div>
         </section>
-   </header>
+</header>
    <main>
     <section>
         <div class="banner-image-div">
@@ -65,9 +72,9 @@
     <div id="sidebar-hero-container">
         <section class="sidebar">
             <div id="sidebar-container">
-                <div id="side-bar-header"><h1>All Cateogory</h1></div>
+                <div id="side-bar-header"><h1>All Category</h1></div>
                 <div class="side-bar-nav">
-                    <div ><a href="Html websites/products.html" class="side-bar-a"><i id="sidebar-products" class="fa-brands fa-product-hunt"></i> Products</a></div><hr>
+                    
                     <div ><a href="Html websites/Bakery.html" class="side-bar-a"><i id="sidebar-bakery" class="fa-solid fa-bread-slice"></i>  Bakery</a></div><hr>
                     <div ><a href="Html websites/Beverages.html" class="side-bar-a"><i id="sidebar-beverages" class="fa-solid fa-martini-glass-citrus"></i> Beverages</a></div><hr>
                     <div ><a href="Html websites/Fish and meat.html" class="side-bar-a"><i id="sidebar-fish" class="fa-solid fa-fish-fins"></i> Fish & Meat</a></div><hr>
