@@ -183,7 +183,7 @@ export const products = [
       price: 15000,
       id: "PU-VE-01",
       category: "Vegetables",
-      Image: "../Images/product images/vegetables/Pumpkin.jpg",
+      Image: "../Images/product images/vegetables/organic Pumpkin.jpg",
       unit: "Per 1 Kg",
     },
     {
