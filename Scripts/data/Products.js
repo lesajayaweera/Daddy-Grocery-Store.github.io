@@ -121,7 +121,7 @@ export const products = [
       Image: "../Images/product images/vegetables/Ginger.jpg",
       unit: "Per 1 Kg",
     },
-    
+
     {
       name: "Tree Tomato",
       price: 11000,
