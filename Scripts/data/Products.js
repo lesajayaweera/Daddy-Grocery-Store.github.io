@@ -310,7 +310,7 @@ export const products = [
       price: 10000,
       id: "PRE-VE-01",
       category: "Vegetables",
-      Image: "../Images/product images/vegetables/Pre-packed Red Onions.jpg",
+      Image: "../Images/product images/vegetables/PrePacked Red Onions.jpg",
       unit: "Per 1 Kg",
     },
     {
