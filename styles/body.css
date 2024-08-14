@@ -77,6 +77,7 @@ h1 {
 .side-banner-image {
   margin-top: 2%;
   border-radius: 10px;
+  min-width: 350px;
 }
 .banner-image {
   width: 100%;

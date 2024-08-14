@@ -895,8 +895,54 @@ export const products = [
       category: "Fruits",
       Image: "../Images/product images/fruits/Melon - Dark Bell.jpg",
       unit: "Per 1 Kg",
-    },{
-      
-    }
+    },
+    {
+      name: "Avocado",
+      price: 5000,
+      id: "AV-FR-01",
+      category: "Fruits",
+      Image: "../Images/product images/fruits/Avocado.jpg",
+      unit: "Per 1 Kg",
+    },
+    {
+      name: "Apple - Fuji",
+      price: 5000,
+      id: "AF-FR-01",
+      category: "Fruits",
+      Image: "../Images/product images/fruits/Apple - Fuji.jpg",
+      unit: "Per 1 Kg",
+    },
+    {
+      name: "Mangosteen",
+      price: 10000,
+      id: "MG-FR-01",
+      category: "Fruits",
+      Image: "../Images/product images/fruits/Mangosteen.jpg",
+      unit: "Per 1 Kg",
+    },
+    {
+      name: "Durian",
+      price: 10000,
+      id: "DU-FR-01",
+      category: "Fruits",
+      Image: "../Images/product images/fruits/Durian.jpg",
+      unit: "Per 1 Kg",
+    },
+    {
+      name: "Apple - Green",
+      price: 5000,
+      id: "AG-FR-01",
+      category: "Fruits",
+      Image: "../Images/product images/fruits/Apple - Green.jpg",
+      unit: "Per 1 Kg",
+    },
+    {
+      name: "Mango - Tjc",
+      price: 10000,
+      id: "MT-FR-01",
+      category: "Fruits",
+      Image: "../Images/product images/fruits/Mango - Tjc.jpg",
+      unit: "Per 1 Kg",
+    },
   ],
 ];
