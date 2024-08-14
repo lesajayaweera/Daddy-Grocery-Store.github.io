@@ -1,5 +1,13 @@
 import { products } from "./data/Products.js";
+
+
 function getRandomItems(products, numberOfItems) {
+    products.forEach((category) => {
+      category.forEach((product) => {
+        product.Image = product.Image.replace("../", "");
+      });
+    });
+
   const flatArray = products.flat(); // Flatten the nested array
   const randomItems = [];
 
@@ -40,7 +48,9 @@ window.addEventListener("load",()=>{
 
     })
     document.getElementById("product-main-container").innerHTML =html;
-})
+})  
+
+console.log(products);
 
 
 
