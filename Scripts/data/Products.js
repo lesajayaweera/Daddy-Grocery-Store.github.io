@@ -180,7 +180,7 @@ export const products = [
     },
     {
       name: "Pumpkin",
-      price: 15000,
+      price: 150000,
       id: "PU-VE-01",
       category: "Vegetables",
       Image: "../Images/product images/vegetables/organic Pumpkin.jpg",
