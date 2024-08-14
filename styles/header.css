@@ -24,7 +24,7 @@
 }
 .left-section{
     width:100%;
-    min-width: 350px;
+    
     /* display:flex;
     align-items: center;
     flex-wrap: wrap; */
@@ -172,3 +172,11 @@
 /* media queries */
 
 
+@media (max-width:1424px){
+    #logo-image{
+        display:none;
+    }
+    .left-section{
+        display:flex;
+    }
+}

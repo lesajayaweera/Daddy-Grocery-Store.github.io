@@ -1,11 +1,10 @@
 import { products } from "./data/Products.js";
 
-const Meat = products[1];
-
+const Fruits = products[2];
 
 let html = '';
 
-Meat.forEach((item) => {
+Fruits.forEach((item) => {
      html += `
         <div class="product-container">
             <div class="product-image-container">
