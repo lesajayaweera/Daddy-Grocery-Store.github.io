@@ -84,6 +84,7 @@
     float: left;
     border-radius: 50px;
     transition: all 0.7s;
+    text-align: center;
 }
 #navigation-bar a:hover{
     color:#00B4D8;
@@ -172,11 +173,3 @@
 /* media queries */
 
 
-@media (max-width:1424px){
-    #logo-image{
-        display:none;
-    }
-    .left-section{
-        display:flex;
-    }
-}

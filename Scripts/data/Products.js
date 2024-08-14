@@ -895,6 +895,8 @@ export const products = [
       category: "Fruits",
       Image: "../Images/product images/fruits/Melon - Dark Bell.jpg",
       unit: "Per 1 Kg",
-    },
+    },{
+      
+    }
   ],
 ];
