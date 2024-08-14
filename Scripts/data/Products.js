@@ -121,14 +121,7 @@ export const products = [
       Image: "../Images/product images/vegetables/Ginger.jpg",
       unit: "Per 1 Kg",
     },
-    {
-      name: "Kohila",
-      price: 10000,
-      id: "KH-VE-01",
-      category: "Vegetables",
-      Image: "../Images/product images/vegetables/Kohila.jpg",
-      unit: "Per 1 Kg",
-    },
+    
     {
       name: "Tree Tomato",
       price: 11000,
