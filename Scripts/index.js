@@ -16,20 +16,23 @@ function getRandomItems(products, numberOfItems) {
     randomItems.push(flatArray[randomIndex]);
     flatArray.splice(randomIndex, 1); // Remove the selected item to avoid duplicates
   }
-
+  
+  
+  
+  
   return randomItems;
 }
 
-// Example usage
+
 
 window.addEventListener("load",()=>{
     const randomProducts = getRandomItems(products, 10);
-    console.log(randomProducts);
+    // console.log(randomProducts);
 
     let html ='';
     randomProducts.forEach((item)=>{
         html += `
-            <div class="product-container">
+            <div class="product-container" data-container-name="${item.name}">
                 <div class="product-image-container">
                     <img class="product-image" src="${item.Image}" alt="${item.Image}">
                 </div>
@@ -48,9 +51,26 @@ window.addEventListener("load",()=>{
 
     })
     document.getElementById("product-main-container").innerHTML =html;
+    document.querySelectorAll(".product-container").forEach((container) => {
+      const cartButton = container.querySelector(".add-to-cart-button");
+      cartButton.addEventListener("click", () => {
+            const productId = cartButton.dataset.productId;
+            const productName = container.dataset.containerName;
+            console.log(`Added ${productName} to cart with ID: ${productId}`);
+            // Add product to cart logic here
+            products.forEach((category) => {
+                category.forEach((product)=>{
+                    if(product.id === productId){
+                        console.log(product.price);
+                        
+                    }
+                })
+            })
+        })
+    });
+
 })  
 
-console.log(products);
 
 
 

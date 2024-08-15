@@ -118,9 +118,9 @@ h1 {
 
 .product-container {
   display: grid;
-  grid-template-rows: auto 240px;
+  grid-template-rows: auto 190px;
   position: relative;
-  width: 400px;
+  width: 340px;
   margin-top: 2%;
   transition: all 0.5s;
 
@@ -135,7 +135,8 @@ h1 {
 }
 .product-name-container {
   font-family: poppins;
-  font-size: 1.5rem;
+
+  font-size: 1.2rem;
   margin: 0;
   
   text-align: center;
@@ -379,10 +380,21 @@ h1 {
   }
 }
 /*media queries  */
-
-@media (max-width:1245px){
+@media (max-width:1000px){
+  #sidebar-hero-container{
+    flex-direction:  column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .sidebar{
+    width: 50%;
+  }
   #sidebar-container{
     display: none;
   }
   
 }
+
+
+

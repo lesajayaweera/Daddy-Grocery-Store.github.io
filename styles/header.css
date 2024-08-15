@@ -3,7 +3,19 @@
 /* Poppins */
 
 
-
+#cartDetailsContainer{
+    position: relative;
+    font-size: 1.5rem;
+    color: #023E8A;
+    
+    
+    
+}
+#cartDetails{
+    position: absolute;
+    left: 90%;
+    
+}
 #header{    
     background-color: var(--BGCOLOR);
     z-index: 100;
@@ -172,4 +184,11 @@
 
 /* media queries */
 
-
+@media (max-width:1000px){
+    #logo-image{
+        display: none;
+    }
+    .left-section{
+        grid-template-columns: 1fr;
+    }
+}
