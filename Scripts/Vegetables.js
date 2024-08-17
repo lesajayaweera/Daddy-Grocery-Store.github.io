@@ -1,13 +1,38 @@
 import { products } from "./data/Products.js";
 
+export function DisplayInProductDisplay(array) {
+    console.log(`hello`);
+    
+    document.querySelectorAll(".product-container").forEach((container) => {
+        container.addEventListener("click", () => {
+            let productName = container.dataset.containerName;
+            const selectedVeg = array
+                .flat()
+                .find((product) => product.name === productName);
+            if (selectedVeg) {
+                localStorage.setItem("selecteditem", JSON.stringify(selectedVeg));
+                console.log("Item added to cart: ", selectedVeg);
+                window.location.href = "Product Display.html";
+            }else{
+                console.log(`error`);
+                
+            }
+        });
+    });
+};
+
+
+// -------------------------------------------MAIN PROGRAM-------------------------------------------------
 let html ='';
 const vegetables = products[0];
 
 vegetables.forEach((item)=>{
     html += `
-        <div class="product-container">
+        <div class="product-container" data-container-name="${item.name}">
             <div class="product-image-container">
-                <img class="product-image" src="${item.Image}" alt="${item.Image}">
+                <img class="product-image" src="${item.Image}" alt="${
+      item.Image
+    }">
             </div>
             <div class="product-name-container">
                 <p class="product-name">${item.name}</p>
@@ -22,8 +47,15 @@ vegetables.forEach((item)=>{
         
         </div>
         `;
+        
+        
 })
-const buttons = document.querySelectorAll(".add-to-cart-button");
-document.getElementById("product-main-container").innerHTML =html;
-console.log(buttons.dataset.productId);
+document.getElementById("product-main-container").innerHTML = html;
+
+
+
+DisplayInProductDisplay(vegetables)
+
+
+
 

@@ -1,14 +1,16 @@
 import { products } from "./data/Products.js";
-
+import { DisplayInProductDisplay } from "./Vegetables.js";
 const Fruits = products[2];
 
 let html = '';
 
 Fruits.forEach((item) => {
      html += `
-        <div class="product-container">
+        <div class="product-container" data-container-name="${item.name}">
             <div class="product-image-container">
-                <img class="product-image" src="${item.Image}" alt="${item.Image}">
+                <img class="product-image" src="${item.Image}" alt="${
+       item.Image
+     }">
             </div>
             <div class="product-name-container">
                 <p class="product-name">${item.name}</p>
@@ -26,3 +28,5 @@ Fruits.forEach((item) => {
 })
 
 document.getElementById("product-main-container").innerHTML = html;;
+
+DisplayInProductDisplay(Fruits);
