@@ -20,7 +20,7 @@ function updateCost(inputElement, displayElement, item) {
 
 // Function to render the product details on the page
 function renderProductDetails(selectedItem) {
-  selectedItem.Image = "../" + selectedItem.Image;
+  // selectedItem.Image = "../" + selectedItem.Image;
   document.title = selectedItem.name;
 
   if (!selectedItem.description) {
@@ -69,6 +69,8 @@ function createQuantityInputBox() {
 // Function to handle loading the product data
 function loadProductData() {
   const selectedItem = JSON.parse(localStorage.getItem("selecteditem"));
+  console.log(selectedItem);
+  
 
   if (selectedItem) {
     renderProductDetails(selectedItem);
