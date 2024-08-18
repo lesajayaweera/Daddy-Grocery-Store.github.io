@@ -25,9 +25,9 @@ export function DisplayInProductDisplay(array) {
 // -------------------------------------------MAIN PROGRAM-------------------------------------------------
 let html ='';
 const vegetables = products[0];
-vegetables.forEach((item)=>{
-    item.Image = "../" + item.Image;
-})
+// vegetables.forEach((item)=>{
+//     item.Image = "../" + item.Image;
+// })
 vegetables.forEach((item)=>{
     html += `
         <div class="product-container" data-container-name="${item.name}">
