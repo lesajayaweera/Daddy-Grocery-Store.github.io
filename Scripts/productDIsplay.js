@@ -82,7 +82,7 @@ function renderProductDetails(selectedItem) {
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.";
   }
 
-  document.getElementById("productDisplayContainer").innerHTML = `
+  document.getElementById("productDisplayContainer").innerHTML= `
         <div id="ImageContainer">
             <img src="${selectedItem.Image}" alt="${selectedItem.name}">
         </div>
