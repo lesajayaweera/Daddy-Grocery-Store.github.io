@@ -13,7 +13,7 @@ export function ShowTheProduct(containerSelector, products) {
         selectedProduct.Image = "../"+ selectedProduct.Image
         
         localStorage.setItem("selecteditem", JSON.stringify(selectedProduct));
-        console.log(selectedProduct);
+        
         
         window.location.href = "Html websites/Product Display.html";
       }
@@ -51,11 +51,9 @@ const randomProducts = getRandomItems(indexProducts, 10);
 let html = "";
 randomProducts.forEach((item) => {
   html += `
-            <div class="product-container" data-container-name="${item.name}">
-                <div class="product-image-container">
-                    <img class="product-image" src="${item.Image}" alt="${
-    item.Image
-  }">
+            <div class="product-container" >
+                <div class="product-image-container" data-container-name="${item.name}">
+                    <img class="product-image" src="${item.Image}" alt="${item.Image}">
                 </div>
                 <div class="product-name-container">
                     <p class="product-name">${item.name}</p>
@@ -75,7 +73,7 @@ randomProducts.forEach((item) => {
 document.getElementById("product-main-container").innerHTML = html;
 //Add click event listener to all the product containers to navigate to Product Display page
 
-ShowTheProduct(".product-container",products);
+ShowTheProduct(".product-image-container", products);
 
 
 
@@ -85,4 +83,10 @@ window.addEventListener("load",calculateTotal);
 
 
 const containers = document.querySelectorAll(".product-container");
-console.log(containers);
+containers.forEach((container)=>{
+  const btn = container.querySelector(".add-to-cart-button");
+  btn.addEventListener("click",()=>{
+   const id =btn.dataset.productId;
+   
+  })
+})
