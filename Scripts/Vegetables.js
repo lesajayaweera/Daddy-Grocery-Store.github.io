@@ -1,21 +1,16 @@
 import { products } from "./data/Products.js";
-
+// ----------------------------------------Functions-------------------------------------------------------------
 export function DisplayInProductDisplay(array) {
-    console.log(`hello`);
-    
     document.querySelectorAll(".product-container").forEach((container) => {
         container.addEventListener("click", () => {
             let productName = container.dataset.containerName;
-            const selectedVeg = array
-                .flat()
-                .find((product) => product.name === productName);
+            const selectedVeg = array.flat().find((product) => product.name === productName);
             if (selectedVeg) {
                 localStorage.setItem("selecteditem", JSON.stringify(selectedVeg));
                 console.log("Item added to cart: ", selectedVeg);
                 window.location.href = "Product Display.html";
             }else{
-                console.log(`error`);
-                
+                console.log(`error`);  
             }
         });
     });
@@ -25,9 +20,6 @@ export function DisplayInProductDisplay(array) {
 // -------------------------------------------MAIN PROGRAM-------------------------------------------------
 let html ='';
 const vegetables = products[0];
-// vegetables.forEach((item)=>{
-//     item.Image = "../" + item.Image;
-// })
 vegetables.forEach((item)=>{
     html += `
         <div class="product-container" data-container-name="${item.name}">
@@ -53,9 +45,6 @@ vegetables.forEach((item)=>{
         
 })
 document.getElementById("product-main-container").innerHTML = html;
-
-
-
 DisplayInProductDisplay(vegetables)
 
 

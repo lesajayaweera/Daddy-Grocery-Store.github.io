@@ -449,9 +449,20 @@ h1 {
   max-width: 300px;
   text-align: center;
   height: 20px;
+  border: gainsboro;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  font-family: poppins;
+  border-radius: 8px;
+}
+#quantityBox:focus{
+  outline: none;
 }
 @media screen and (max-width: 600px){
   #productDisplayContainer{
     grid-template-columns: 1fr;
+  }
+  #mainHeader{
+    display: ;
   }
 }

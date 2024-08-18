@@ -12,7 +12,7 @@ export function ShowTheProduct(containerSelector, products) {
       if (selectedProduct) {
         console.log(`found`);
         localStorage.setItem("selecteditem", JSON.stringify(selectedProduct));
-        window.location.href = "../Html websites/Product Display.html";
+        window.location.href = "Html websites/Product Display.html";
       } else {
         console.log(`error`);
       }
