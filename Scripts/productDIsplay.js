@@ -16,12 +16,23 @@ window.addEventListener("load",()=>{
             <div id="productDescription">
                 <h2>${selectedItem.name}</h2>
                 <p>${selectedItem.description}</p>
-                <p id="PriceProduct">Price:<span> Rs.${(
-                  selectedItem.price / 100
-                ).toFixed(2)}</span></p>
-                <button>ADD TO CART</button>
+                <p id="PriceProduct">Price:<span> Rs.${(selectedItem.price / 100).toFixed(2)}</span></p>
+                <div id="buyButtonContainer">
+                  <button id="ProductDisplaybtn" data-product-id="${
+                    selectedItem.id
+                  }">ADD TO CART</button>
+                </div
+                
             </div>
+            
             `;
+          const quantityBox = document.createElement("input");
+          quantityBox.type = "number";
+          quantityBox.value = 1;
+          quantityBox.min = 1;
+          quantityBox.setAttribute("id","quantityBox")
+          document.getElementById("buyButtonContainer").appendChild(quantityBox);
+
         
     }
    else {

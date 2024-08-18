@@ -402,7 +402,7 @@ h1 {
 }
 #productDisplayContainer{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2,1fr);
   gap: 20px;
   padding: 20px;
   margin-bottom: 30px;
@@ -410,33 +410,45 @@ h1 {
   justify-content: center;
 }
 #ImageContainer{
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 #productDescription{
-        width: 100%;
-        height: auto;
+  display: grid;
+  width: 100%;
+  height: auto;
 }
-#productDescription button{
-        padding: 15px 40px;
-        background-color: #90e0ef;
-        color: black;
-        border: none;
-        border-radius: 30px;
-        cursor: pointer;
-        margin-top: 20px;
-        transition: all 0.3s ease-in-out;
-        font-weight: 600;
+#ProductDisplaybtn{
+  padding: 15px 40px;
+  background-color: #90e0ef;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  max-width: 250px;
 }
-#productDescription button:hover{
-        background-color: #023e8a;
-        color: white;
+#ProductDisplaybtn:hover{
+  background-color: #023e8a;
+  color: white;
 }
 #PriceProduct span{
-        font-weight: 500;
-        font-size: 1.3rem;
-        color: #023e8a;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #023e8a;
+}
+#buyButtonContainer{
+  display:flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+#quantityBox{
+  max-width: 300px;
+  text-align: center;
+  height: 20px;
 }
 @media screen and (max-width: 600px){
   #productDisplayContainer{
