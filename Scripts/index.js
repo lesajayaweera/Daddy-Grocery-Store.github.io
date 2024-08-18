@@ -1,5 +1,5 @@
 import { products } from "./data/Products.js";
-import { calculateTotal } from "../Scripts/productDIsplay.js";
+import { calculateTotal } from "./productDIsplay.js";
 const indexProducts = products;
 export function ShowTheProduct(containerSelector, products) {
   document.querySelectorAll(containerSelector).forEach((container) => {

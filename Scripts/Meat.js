@@ -1,5 +1,6 @@
 import { products } from "./data/Products.js";
 import { DisplayInProductDisplay } from "./Vegetables.js";
+import { calculateTotal } from "./productDIsplay.js";
 const Meat = products[1];
 
 
@@ -31,3 +32,4 @@ Meat.forEach((item) => {
 document.getElementById("product-main-container").innerHTML = html;;
 
 DisplayInProductDisplay(Meat);
+window.addEventListener("load", calculateTotal);

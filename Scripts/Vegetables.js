@@ -1,4 +1,5 @@
 import { products } from "./data/Products.js";
+import { calculateTotal } from "./productDIsplay.js";
 // ----------------------------------------Functions-------------------------------------------------------------
 export function DisplayInProductDisplay(array) {
     document.querySelectorAll(".product-container").forEach((container) => {
@@ -49,6 +50,7 @@ vegetables.forEach((item)=>{
 })
 document.getElementById("product-main-container").innerHTML = html;
 DisplayInProductDisplay(vegetables)
+window.addEventListener("load", calculateTotal);
 
 
 
