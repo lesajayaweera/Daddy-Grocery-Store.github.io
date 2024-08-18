@@ -9,18 +9,14 @@ function updateCost(inputElement, displayElement, item) {
   inputElement.addEventListener("change", () => {
     
     const quantity = parseInt(inputElement.value);
-
-   
     total = item.price * quantity;
-
-    
     displayElement.innerText = ` Rs.${(total / 100).toFixed(2)}`;
   });
 }
 
 // Function to render the product details on the page
 function renderProductDetails(selectedItem) {
-  // selectedItem.Image = "../" + selectedItem.Image;
+  
   document.title = selectedItem.name;
 
   if (!selectedItem.description) {

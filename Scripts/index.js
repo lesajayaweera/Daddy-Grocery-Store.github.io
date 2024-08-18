@@ -10,8 +10,11 @@ export function ShowTheProduct(containerSelector, products) {
         .find((product) => product.name === productName);
 
       if (selectedProduct) {
+        selectedProduct.Image = "../"+ selectedProduct.Image
         console.log(`found`);
         localStorage.setItem("selecteditem", JSON.stringify(selectedProduct));
+        console.log(selectedProduct);
+        
         window.location.href = "Html websites/Product Display.html";
       } else {
         console.log(`error`);

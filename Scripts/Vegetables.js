@@ -4,10 +4,13 @@ export function DisplayInProductDisplay(array) {
     document.querySelectorAll(".product-container").forEach((container) => {
         container.addEventListener("click", () => {
             let productName = container.dataset.containerName;
-            const selectedVeg = array.flat().find((product) => product.name === productName);
-            if (selectedVeg) {
-                localStorage.setItem("selecteditem", JSON.stringify(selectedVeg));
-                console.log("Item added to cart: ", selectedVeg);
+            const selectedItem = array.flat().find((product) => product.name === productName);
+            
+            
+            if (selectedItem) {
+                
+                localStorage.setItem("selecteditem", JSON.stringify(selectedItem));
+                console.log(selectedItem.Image);
                 window.location.href = "Product Display.html";
             }else{
                 console.log(`error`);  
