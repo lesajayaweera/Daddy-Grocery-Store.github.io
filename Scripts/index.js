@@ -1,4 +1,5 @@
 import { products } from "./data/Products.js";
+// importing the calculate Total function
 import { calculateTotal } from "./productDIsplay.js";
 const indexProducts = products;
 export function ShowTheProduct(containerSelector, products) {
