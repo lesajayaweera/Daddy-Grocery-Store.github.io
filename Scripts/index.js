@@ -84,5 +84,5 @@ window.addEventListener("load",calculateTotal);
 
 
 
-// const containers = document.querySelectorAll(".product-container");
-// console.log(containers);
+const containers = document.querySelectorAll(".product-container");
+console.log(containers);

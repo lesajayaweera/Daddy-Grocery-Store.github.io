@@ -75,7 +75,7 @@ function updateCost(inputElement, displayElement, item) {
 // Function to render the product details on the page
 function renderProductDetails(selectedItem) {
   
-  document.title = selectedItem.name;
+  
 
   if (!selectedItem.description) {
     selectedItem.description =
