@@ -446,10 +446,10 @@ h1 {
   align-items: center;
 }
 #quantityBox{
-  max-width: 300px;
+  max-width: 150px;
   text-align: center;
   height: 20px;
-  border: gainsboro;
+  border:solid #90e0ef;
   padding: 10px 0;
   font-size: 1.2rem;
   font-family: poppins;
@@ -462,7 +462,7 @@ h1 {
   #productDisplayContainer{
     grid-template-columns: 1fr;
   }
-  #mainHeader{
-    display: ;
-  }
+  /* #mainHeader{
+    display:none ;
+  } */
 }

@@ -1,5 +1,63 @@
 import { products } from "./data/Products.js";
+export function calculateTotal(){
+  let cart = JSON.parse(localStorage.getItem("cart"));
+  const displayElement = document.querySelector("#cart-count");
+  let total = 0;
+  cart.forEach((product) => {
+    total += product.price * product.quantity;
+  });
+  displayElement.innerText = ` Rs.${(total / 100).toFixed(2)}`;
+  
+  
 
+}
+function AddToCart(selectedItem){
+  const addToCart = document.querySelector("#ProductDisplaybtn");
+  const cartCount = document.querySelector("#cart-count");
+  
+  
+  addToCart.addEventListener("click", () => {
+    const quantity = parseInt(document.getElementById("quantityBox").value);
+    
+    selectedItem.quantity = quantity;
+    
+    let cart  = JSON.parse(localStorage.getItem("cart"));
+    
+    if (!cart) {
+      cart = [];
+    }
+    
+    let productExist =false;
+    
+    cart.forEach((product)=>{
+      if(product.id === selectedItem.id){
+        product.quantity += quantity;
+       
+       
+        
+        productExist =true;
+      }
+    })
+    
+    if (!productExist) {  
+      cart.push({
+        id: selectedItem.id,
+        name: selectedItem.name,
+        price: selectedItem.price,
+        quantity: selectedItem.quantity,
+        category: selectedItem.category,
+        Image: selectedItem.Image,
+      });
+      
+    }
+    
+    // Update the cart in localStorage
+    localStorage.setItem("cart", JSON.stringify(cart));
+    console.log(cart);
+   calculateTotal(cart, cartCount); 
+   
+  });
+}
 // Function to update the cost based on the input quantity
 function updateCost(inputElement, displayElement, item) {
   
@@ -50,6 +108,10 @@ function renderProductDetails(selectedItem) {
     document.querySelector("#PriceProduct span"),
     selectedItem
   );
+  // Add to cart button click event
+  AddToCart(selectedItem);
+ 
+  
 }
 
 // Function to create the quantity input box
@@ -65,11 +127,14 @@ function createQuantityInputBox() {
 // Function to handle loading the product data
 function loadProductData() {
   const selectedItem = JSON.parse(localStorage.getItem("selecteditem"));
-  console.log(selectedItem);
+  calculateTotal()
   
 
   if (selectedItem) {
     renderProductDetails(selectedItem);
+    
+    
+
   } else {
     document.getElementById("productDisplayContainer").innerHTML =
       "<p>Product not found.</p>";
@@ -77,6 +142,8 @@ function loadProductData() {
 
   localStorage.removeItem("selectedProduct");
 }
-
+// -----------------------------------------MAIN PROGRAM--------------------------------------------------
 // Load product data when the page is loaded
 window.addEventListener("load", loadProductData);
+
+

@@ -1,4 +1,5 @@
 import { products } from "./data/Products.js";
+import { calculateTotal } from "../Scripts/productDIsplay.js";
 const indexProducts = products;
 export function ShowTheProduct(containerSelector, products) {
   document.querySelectorAll(containerSelector).forEach((container) => {
@@ -41,8 +42,12 @@ function getRandomItems(products, numberOfItems) {
 
 
 //----------------------------------MAIN PROGRAM------------------------------------------------------------------- 
+let cart = JSON.parse(localStorage.getItem("cart"));
+if(cart ===null){
+  cart = [];
+}
 const randomProducts = getRandomItems(indexProducts, 10);
-// console.log(randomProducts);
+
 
 let html = "";
 randomProducts.forEach((item) => {
@@ -72,4 +77,8 @@ document.getElementById("product-main-container").innerHTML = html;
 //Add click event listener to all the product containers to navigate to Product Display page
 
 ShowTheProduct(".product-container",products);
-//
+
+
+
+
+window.addEventListener("load",calculateTotal);

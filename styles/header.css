@@ -4,17 +4,20 @@
 
 
 #cartDetailsContainer{
-    position: relative;
-    font-size: 1.5rem;
-    color: #023E8A;
-    
-    
-    
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
 }
 #cartDetails{
-    position: absolute;
-    left: 90%;
-    
+    font-size: 1.5rem;
+    color: black;
+    span{
+        color: #023E8A;
+        font-family:roboto;
+        font-weight: 700;
+    }
+   
 }
 #header{    
     background-color: var(--BGCOLOR);
