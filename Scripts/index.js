@@ -6,9 +6,7 @@ export function ShowTheProduct(containerSelector, products) {
     container.addEventListener("click", () => {
       let productName = container.dataset.containerName;
 
-      const selectedProduct = products
-        .flat()
-        .find((product) => product.name === productName);
+      const selectedProduct = products.flat().find((product) => product.name === productName);
 
       if (selectedProduct) {
         selectedProduct.Image = "../"+ selectedProduct.Image
