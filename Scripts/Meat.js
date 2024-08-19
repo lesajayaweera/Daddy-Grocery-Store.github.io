@@ -64,6 +64,8 @@ buttons.forEach((button) => {
               price: product.price,
               quantity: 1,
               category: product.category,
+              Image: product.Image,
+              
             });
           }
           
