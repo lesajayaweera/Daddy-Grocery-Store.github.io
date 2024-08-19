@@ -1,7 +1,46 @@
 import { products } from "./data/Products.js";
 // importing the calculate Total function
 import { calculateTotal } from "./productDIsplay.js";
-const indexProducts = products;
+export function AddToCartbtn(){
+  const containers = document.querySelectorAll(".product-container");
+  containers.forEach((container) => {
+    const btn = container.querySelector(".add-to-cart-button");
+    btn.addEventListener("click", () => {
+      const id = btn.dataset.productId;
+      let product = cart.find((item) => item.id === id);
+      if (product) {
+        product.quantity += 1;
+        console.log(`added 1`);
+      } else {
+        let productFound = false;
+        products.forEach((category) => {
+          category.forEach((item) => {
+            if (item.id === id) {
+              productFound = true;
+              cart.push({
+                id: item.id,
+                name: item.name,
+                price: item.price,
+                quantity: 1,
+                category: item.category,
+                Image: item.Image,
+              });
+              console.log(`added new`);
+            }
+            if (!productFound) {
+              console.error(`product didn't found`);
+            }
+          });
+        });
+      }
+      localStorage.setItem("cart", JSON.stringify(cart));
+      calculateTotal();
+      console.log(cart);
+    });
+  });
+
+
+}
 export function ShowTheProduct(containerSelector, products) {
   document.querySelectorAll(containerSelector).forEach((container) => {
     container.addEventListener("click", () => {
@@ -45,7 +84,7 @@ let cart = JSON.parse(localStorage.getItem("cart"));
 if(cart ===null){
   cart = [];
 }
-const randomProducts = getRandomItems(indexProducts, 10);
+const randomProducts = getRandomItems(products, 10);
 
 
 let html = "";
@@ -74,7 +113,7 @@ document.getElementById("product-main-container").innerHTML = html;
 //Add click event listener to all the product containers to navigate to Product Display page
 
 ShowTheProduct(".product-image-container", products);
-
+AddToCartbtn();
 
 
 
@@ -82,45 +121,3 @@ window.addEventListener("load",calculateTotal);
 
 
 
-const containers = document.querySelectorAll(".product-container");
-containers.forEach((container)=>{
-  const btn = container.querySelector(".add-to-cart-button");
-  btn.addEventListener("click",()=>{
-   const id =btn.dataset.productId;
-   let product = cart.find(item=>item.id ===id)
-   if(product){
-    product.quantity += 1;
-    console.log(`added 1`);
-    
-   }
-   else{
-    let productFound = false;
-    products.forEach((category)=>{
-      category.forEach((item)=>{
-        if(item.id === id){
-          productFound = true;
-          cart.push({
-            id: item.id,
-            name: item.name,
-            price: item.price,
-            quantity: 1,
-            category: item.category,
-            Image: item.Image,
-          });
-          console.log(`added new`);
-          
-        }
-        if(!productFound){
-          console.error(`product didn't found`)
-        }
-        
-      })
-              
-    })
-   }
-   localStorage.setItem("cart",JSON.stringify(cart));
-   calculateTotal();
-   console.log(cart);
-   
-  })
-})
