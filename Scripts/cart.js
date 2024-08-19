@@ -64,6 +64,7 @@ function CalculateCost(){
 }
 
 CalculateCost();
-  
+console.log(cart);
+
 
 

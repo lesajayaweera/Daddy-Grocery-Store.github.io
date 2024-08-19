@@ -117,7 +117,11 @@ AddToCartbtn();
 
 
 
-window.addEventListener("load",calculateTotal);
-
+window.addEventListener("load",()=>{
+  localStorage.removeItem("cart");
+  console.log(cart);
+  
+});
+window.addEventListener("DOMContentLoaded", calculateTotal); 
 
 
