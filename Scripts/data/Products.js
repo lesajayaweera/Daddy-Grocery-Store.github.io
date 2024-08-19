@@ -1,6 +1,6 @@
 export const products = [
-  // Vegetables
   [
+    // vegetables
     {
       name: "Coconut",
       price: 12000,
@@ -233,7 +233,7 @@ export const products = [
     {
       name: "Cabbage",
       price: 9000,
-      id: "CA-VE-01",
+      id: "CA-VE-01-2",
       category: "Vegetables",
       Image: "../Images/product images/vegetables/Cabbage.jpg",
       unit: "Per 1 Kg",
@@ -242,7 +242,7 @@ export const products = [
     {
       name: "Leeks",
       price: 10000,
-      id: "LE-VE-01",
+      id: "LE-VE-01-2",
       category: "Vegetables",
       Image: "../Images/product images/vegetables/Leeks.jpg",
       unit: "Per 1 Kg",
@@ -287,7 +287,7 @@ export const products = [
     {
       name: "Capsicum",
       price: 15000,
-      id: "CA-VE-01",
+      id: "CA-VE-01-3",
       category: "Vegetables",
       Image: "../Images/product images/vegetables/Capsicum.jpg",
       unit: "Per 1 Kg",
@@ -296,7 +296,7 @@ export const products = [
     {
       name: "Lemon",
       price: 10000,
-      id: "LE-VE-01",
+      id: "LE-VE-01-3",
       category: "Vegetables",
       Image: "../Images/product images/vegetables/Lemon.jpg",
       unit: "Per 1 Kg",
@@ -482,7 +482,7 @@ export const products = [
     {
       name: "Curry Leaves",
       price: 10000,
-      id: "CL-VE-01",
+      id: "CL-VE-01-2",
       category: "Vegetables",
       Image: "../Images/product images/vegetables/Curry Leaves.jpg",
       unit: "Per 1 Kg",
@@ -492,7 +492,7 @@ export const products = [
     {
       name: "Coriander Leaves",
       price: 10000,
-      id: "CL-VE-01",
+      id: "CL-VE-01-3",
       category: "Vegetables",
       Image: "../Images/product images/vegetables/Coriander Leaves.jpg",
       unit: "Per 1 Kg",
@@ -522,7 +522,7 @@ export const products = [
     {
       name: "Bell Pepper Yellow",
       price: 10000,
-      id: "BP-VE-01",
+      id: "BP-VE-01-2",
       category: "Vegetables",
       Image: "../Images/product images/vegetables/Bell Pepper Yellow.jpg",
       unit: "Per 1 Kg",
@@ -532,7 +532,7 @@ export const products = [
     {
       name: "Bell Pepper Green",
       price: 10000,
-      id: "BG-VE-01",
+      id: "BG-VE-01-2",
       category: "Vegetables",
       Image: "../Images/product images/vegetables/Bell Pepper Green.jpg",
       unit: "Per 1 Kg",
@@ -642,7 +642,7 @@ export const products = [
     {
       name: "Lectuce",
       price: 10000,
-      id: "LE-VE-01",
+      id: "LE-VE-01-4",
       category: "Vegetables",
       Image: "../Images/product images/vegetables/Lectuce.jpg",
       unit: "Per 1 Kg",
@@ -650,8 +650,8 @@ export const products = [
         "Fresh and crisp lectuce, ideal for adding crunch and freshness to salads and sandwiches.",
     },
   ],
-  // Meat
   [
+    // meat and fish
     {
       name: "Chicken Thigh Skin On",
       price: 150000,
@@ -675,7 +675,7 @@ export const products = [
     {
       name: "Chicken Drumsticks Skinless",
       price: 190000,
-      id: "CDSS-ME-01",
+      id: "CDSS-ME-02",
       category: "Meat",
       Image: "../Images/product images/meats/Chicken Drumsticks Skinless.jpg",
       unit: "Per 1 Kg",
@@ -755,7 +755,7 @@ export const products = [
     {
       name: "Chicken Thigh Skinless",
       price: 150000,
-      id: "CTSO-ME-01",
+      id: "CTSO-ME-01-2",
       category: "Meat",
       Image: "../Images/product images/meats/Chicken Thigh Skinless.jpg",
       unit: "Per 1 Kg",
@@ -776,7 +776,7 @@ export const products = [
     {
       name: "Chicken Winglets",
       price: 200000,
-      id: "CW-ME-01",
+      id: "CW-ME-01-2",
       category: "Meat",
       Image: "../Images/product images/meats/Chicken Winglets.jpg",
       unit: "Per 1 Kg",
@@ -1054,8 +1054,8 @@ export const products = [
         "Octopus is perfect for grilling or adding a unique touch to your dishes. Known for its tender texture and rich flavor, each piece is fresh and high quality.",
     },
   ],
-  //  Fruits
   [
+    // fruits
     {
       name: "Papaya",
       price: 5000,
@@ -1158,3 +1158,31 @@ export const products = [
     },
   ],
 ];
+
+// function fixDuplicateIds(products) {
+//   const idCount = {}; // Object to store the count of each ID
+
+//   products.forEach((category) => {
+//     category.forEach((product) => {
+//       const id = product.id;
+
+//       // If the ID is already in the idCount object, it's a duplicate
+//       if (idCount[id]) {
+//         idCount[id] += 1;
+//         product.id = `${id}-${idCount[id]}`; // Append the count to make the ID unique
+//       } else {
+//         idCount[id] = 1; // Initialize the count for a new ID
+//       }
+//     });
+//   });
+
+//   return products;
+// }
+
+// const fixedProducts = fixDuplicateIds(products);
+
+// console.log(fixedProducts);
+
+// fixDuplicateIds(products);
+
+// localStorage.setItem("products",JSON.stringify(fixDuplicateIds(products)))

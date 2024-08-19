@@ -2,6 +2,8 @@ import { products } from "./data/Products.js";
 export function calculateTotal(){
   let cart = JSON.parse(localStorage.getItem("cart"));
   const displayElement = document.querySelector("#cart-count");
+  console.log(displayElement);
+  
   let total = 0;
   cart.forEach((product) => {
     total += product.price * product.quantity;

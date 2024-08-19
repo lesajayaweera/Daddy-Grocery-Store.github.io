@@ -87,6 +87,40 @@ containers.forEach((container)=>{
   const btn = container.querySelector(".add-to-cart-button");
   btn.addEventListener("click",()=>{
    const id =btn.dataset.productId;
+   let product = cart.find(item=>item.id ===id)
+   if(product){
+    product.quantity += 1;
+    console.log(`added 1`);
+    
+   }
+   else{
+    let productFound = false;
+    products.forEach((category)=>{
+      category.forEach((item)=>{
+        if(item.id === id){
+          productFound = true;
+          cart.push({
+            id: item.id,
+            name: item.name,
+            price: item.price,
+            quantity: 1,
+            category: item.category,
+            Image: item.Image,
+          });
+          console.log(`added new`);
+          
+        }
+        if(!productFound){
+          console.error(`product didn't found`)
+        }
+        
+      })
+              
+    })
+   }
+   localStorage.setItem("cart",JSON.stringify(cart));
+   calculateTotal();
+   console.log(cart);
    
   })
 })
