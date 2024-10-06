@@ -18,7 +18,7 @@ export function DisplayInProductDisplay(array) {
         console.log(selectedItem.Image);
         console.log(selectedItem);
 
-        // window.location.href = "Product Display.html";
+        window.location.href = "Product Display.html";
       } else {
         console.log(`error`);
       }

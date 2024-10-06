@@ -125,3 +125,4 @@ window.addEventListener("load",()=>{
 window.addEventListener("DOMContentLoaded", calculateTotal); 
 
 
+

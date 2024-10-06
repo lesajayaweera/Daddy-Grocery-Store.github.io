@@ -1156,6 +1156,7 @@ export const products = [
       description:
         "Delight in the rich, tropical flavor of our Tjc Mangoes. Known for their sweet, juicy flesh and fragrant aroma, these mangoes are perfect for snacking, desserts, or smoothies. Handpicked for their ripeness and flavor, Tjc Mangoes promise a taste of paradise in every bite.",
     },
+    
   ],
 ];
 

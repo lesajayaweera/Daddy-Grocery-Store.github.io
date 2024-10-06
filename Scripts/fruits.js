@@ -4,14 +4,6 @@ import { calculateTotal } from "./productDIsplay.js";
 
 
 
-
-    
-
-
-
-
-
-
 const Fruits = products[2];
 
 let html = '';
@@ -49,7 +41,7 @@ DisplayInProductDisplay(Fruits);
 calculateTotal();
 
 const buttons = document.querySelectorAll(".add-to-cart-button");
-console.log(buttons);
+
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {

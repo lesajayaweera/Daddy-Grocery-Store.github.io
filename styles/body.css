@@ -309,22 +309,20 @@ h1 {
 .brands-img{
   width:80%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  margin: auto;
+  mix-blend-mode: colors;
 
   
 }
-#forbes{
-  display: block;
-  width:90%;
-  margin: 5% auto 5% auto;
-  /* padding-top: 7%;
-  padding-left: 5%; */
-}
+
 @keyframes scrolling {
   0%{transform: translate(0)}
   25%{transform: translate(-100%)}
   50%{transform: translate(-150%)}
+  75%{transform: translate(-250%)}
+  
 }
 
 /*  Products page  */
@@ -339,13 +337,6 @@ h1 {
   display: flex;
   overflow: hidden;
   border-radius: 20px;
-  
-  
-  
-  
-  
-  
-  
   img{
     width: 1525px;
     height: 400px;
